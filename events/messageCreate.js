@@ -77,9 +77,6 @@ client.on("messageCreate", async (message) => {
         return message.channel.send({ embeds: [noPermissionEmbed] });
       }
     }
-return await command.run(client, message, args);
-
-    } else await command.run(client, message, args);
+  command.run(client, message,args)
   }
-
-)
+})
